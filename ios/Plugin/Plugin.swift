@@ -353,7 +353,7 @@ public class BarcodeScanner: CAPPlugin, AVCaptureMetadataOutputObjectsDelegate {
                 jsObject["format"] = type
 
            } else {
-             jsObject["hasContent"] = false
+                 jsObject["hasContent"] = false
             }
 
             if (self.savedCall != nil) {
