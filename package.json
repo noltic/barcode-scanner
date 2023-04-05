@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DutchConcepts/capacitor-barcode-scanner.git"
+    "url": "git+https://github.com/noltic/barcode-scanner.git"
   },
   "bugs": {
-    "url": "https://github.com/DutchConcepts/capacitor-barcode-scanner/issues"
+    "url": "https://github.com/noltic/barcode-scanner/issues"
   },
   "keywords": [
     "capacitor",
@@ -38,9 +38,10 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^3.0.0",
-    "@capacitor/core": "^3.0.0",
-    "@capacitor/ios": "^3.0.0",
+    "@capacitor/android": "^4.0.0",
+    "@capacitor/cli": "^4.7.3",
+    "@capacitor/core": "^4.0.0",
+    "@capacitor/ios": "^4.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",
@@ -55,7 +56,10 @@
     "typescript": "~4.0.3"
   },
   "peerDependencies": {
-    "@capacitor/core": "^3.0.0"
+    "@capacitor/core": "^4.0.0"
+  },
+  "overrides": {
+    "@types/node": "17.0.41"
   },
   "capacitor": {
     "ios": {
@@ -75,9 +79,8 @@
       "pre-commit": "npx pretty-quick --staged"
     }
   },
-  "homepage": "https://github.com/DutchConcepts/capacitor-barcode-scanner#readme",
+  "homepage": "https://github.com/noltic/barcode-scanner#readme",
   "directories": {
     "example": "examples"
-  },
-  "dependencies": {}
+  }
 }
